@@ -1,5 +1,5 @@
 const validate = require('./card');
 
-test('dds 3 + 5 to equal 8', () => {
-  expect(validate(3, 5)).toBe(8);
+test('VISA: 4111111111111111 (valid)', () => {
+  expect(validate(4111111111111111)).toEqual('Unknown');
 });
